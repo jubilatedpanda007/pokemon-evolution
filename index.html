@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jubilated Panda | Pokémon Evolution</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="favicon.ico" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Pokémon Evolution</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" aria-current="page" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#problems">Pokédex Problems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#outline">Concept Outline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#concept">Interactive Concept</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
+  <div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    
+      <!-- include pokeball  -->
+      <img src="pokeball.png" alt="pokeball" class="pokeball">
+
+      <h1 class="ml-2">Let's Make a Pokédex Concept!</h1>
+   
+    </div>
+     <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+     <div class="flex text-center text-lg-start">
+      <a href="#introduction" class="start scrollto d-inline-flex align-items-center justify-content-center align-self-center mb-5">
+        <span>Pikachu, I choose you!</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    
+
+    <!--Waves Container-->
+    <!-- <div>
+    <svg id="introduction" class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(23,25,35,0.7)" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(23,25,35,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(23,25,35,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#171923" />
+    </g>
+    </svg>
+    </div> -->
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+
+
+  <div class="container py-4">
+
+    <!-- CITATION: JUMBOTRON EXAMPLE FROM https://getbootstrap.com/docs/5.0/examples/#custom-components -->
+    <!-- <div class="p-5 mb-4 jumbo-bg rounded-3">
+      <div class="row">
+        <div class="container-fluid py-5 col-md-6">
+          <h1 class="display-5 fw-bold" style="color: white">Iterative Design</h1>
+          <p class="col-md-8 fs-4" style="color: white">Let's design an App for Orca!</p>
+        </div> -->
+        <!-- CITATION: Orca Citation https://codepen.io/Itchiii/pen/Ldaoaz -->
+        <!-- <div class="col-md-6">
+          <svg x="0px" y="0px" width="250px" height="250px" viewBox="0 0 250 250">
+            <path class="path2" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M124.241,151.721c29.446-9.411,64.104-4.367,91.04,42.945c0,0-33.618,3.563-31.382,39.307c22.249,3.821,35.751-15.939,35.751-15.939  c6.006,13.203,22.958,18.904,22.958,18.904c16.673-33.518-14.624-49.546-14.624-49.546C245.333,68.601,167.75,54.5,134.502,52.163  C88.5,49,96.252,18.706,97,7.125C64.875,15,71.667,56.667,68.752,58.141C-45.066,124.14,20.167,201.375,27.667,204.5"/>
+            <path class="path" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M219.638,217.784c-5.204-11.196-1.548-24.239-1.548-24.239c-10.28-57.368-44.34-67.251-61.09-76.96s-1.641-16.537,7.68-16.728  s13.737-1.869,13.242-7.182C175.25,81.5,121.75,78.5,111.176,119.907c-3.073,16.19,21.835,39.559,26.068,60.438  c0.684,3.691-5.729,8.884-24.906-0.249c-19.178-9.133-23.088-30.346-33.699-34.514c-43.51-14.963-50.188,59.404-50.188,59.404  c24.735,9.521,36.923-18.126,66.668-38.722"/>
+            <path class="eye" fill="none" stroke="#FFA719" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="  M23.833,146.667c11.667,1.833,14.16-23.786,3.83-25.56S12.167,144.834,23.833,146.667z"/>
+          </svg>
+        </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3 id="introduction" class="pb-4 mb-4 border-bottom">
+          Introduction
+        </h3>
+
+        <!-- Add site-screenshot on Left in Rounded Image and then on right a description of website, below that is a fun fact that is expandable -->
+        <div class="row">
+          <div class="col-md-6 col-6">
+            <!-- make clicking image open site, on hover make it expand -->
+            <a href="https://www.pokemon.com/us/pokedex">
+              <img class="site img-fluid" src="official.png" alt="Official Pokedex">
+            </a>
+          </div>
+          <div class="col-md-6 col-6">
+            <h4 class="pb-2 mb-2"><b>Motivation</b></h4>
+            <p>
+              I have always loved Pokemon and wanted to create a website that <b>would give me an excuse to geek out</b> over Pokemon stats and revisit a part of my childhoold.
+              I also wanted to create a website that Pokemon fans would enjoy using and playing around with.
+            </p>
+            <p> 
+              While browsing the internet, I came across a <a href="https://www.pokemon.com/us/pokedex" target="_blank">Pokédex</a> that was created by the Pokemon company.
+              I noticed that the site was <b>not mobile-friendly</b> and that it was <b>not interactive</b> (i.e. you could not sort or filter the Pokemon). Looking at the other three
+              major Pokédex websites, I noticed that they were all <b>not mobile-friendly</b> and that they were <b>not interactive</b> as well!
+            </p>
+            <p>
+              Therefore, I created a toy Pokédex using <a href="https://mui.com/" target="_blank">Material UI</a> (MUI), a React component library! I wanted to create a new Pokedex concept 
+              that allows users to sort and filter in a way the major Pokedex websites do not!
+            </p>
+
+            <h5><b>What is a Pokédex?</b></h5>
+              <p>Before we get started, let's take a look at what a Pokédex is!</p>
+              <p>
+                A Pokédex is a device that is used to record and store information about the various species of Pokémon in the world.
+              </p>
+              <p>Our Toy-Pokédex will include MUI cards of the first few Pokemon in the official Pokedex <b>(linked on the left)</b>, filter and sort these Pokemon, and even assemble their own team and see some of its stats!</p>
+          </div>
+        </div>
+
+        <!-- Create a new section titled sketches and then add the sketches-->
+        <div class="row">
+          <div class="col-md-12">
+            <h3 id="problems" class="pb-4 mb-4 border-bottom">
+              Pokédex Problems
+            </h3>
+
+            <div class="row">
+              <div class="col-md-6 col-6">
+                <p>It all started with a Google Search! I searched for <b>Pokédex</b> and examined Google's top 3 recommendations, as seen on the right!</p> 
+                <p>Below is an <b>overview</b> of each of the Top 3 Pokédex's! I also dive into their features and then the ideas I got while playing around with them!</p>
+              </div>
+  
+              <div class="col-md-6 col-6">
+                <!-- make clicking image open site, on hover make it expand -->
+                <a href="https://www.google.com/search?q=pokedex&oq=poke&aqs=chrome.0.69i59l3j69i57j69i65j69i60l3.2827j0j1&sourceid=chrome&ie=UTF-8">
+                  <img class="site img-fluid" src="search.png" alt="Google Search">
+                </a>
+              </div>
+            </div>
+            
+            
+          
+            <div class="row mt-3">
+              
+              <div class="col-md-6 col-6">
+                <!-- make clicking image open site, on hover make it expand -->
+                <a href="https://www.pokemon.com/us/pokedex">
+                  <img class="site img-fluid" src="official_un.png" alt="Official Pokdex">
+                </a>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card dark-bg h-100">
+                  <div class="card-body">
+                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fa-solid fa-circle-dot"></i></button>
+                    <h4><b>Official Pokédex</b></h4>
+                    <p class="card-text">
+                      This is the official Pokédex from The Pokémon Company! It is a great resource for Pokemon fans, and includes through information about each Pokemon. Some of the features it includes are:
+                    </p>
+                    <p class="card-text">
+                      <ul>
+                        <li>
+                          Text Search by Name or Number
+                        </li>
+                        <li>
+                          Suprise Me Button
+                        </li>
+                        <li>
+                          Sort by Name or Number
+                        </li>
+                      </ul> 
+                    </p>
+                    <p>
+                      However, the site is not mobile-friendly and does not allow for much interactivity! The most glaring issue is the <b>lack of sorting by Type</b>!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-4">
+                <div class="card dark-bg h-100">
+                  <div class="card-body">
+                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fa-solid fa-diamond"></i></button>
+                    <h4><b>Pokémon Database</b></h4>
+                    <p class="card-text">
+                      This fanmade site is a great resource for Pokemon fans. It includes everything from news to a large database chronicling all of the Pokemon. It's features include: However, it's Pokedex is contained in a "spreadsheet" format, and does not allow for much interactivity!
+                    </p>
+                    <p class="card-text">
+                      <ul>
+                        <li>
+                          "Spreadsheet" Format 
+                        </li>
+                        <li>
+                          Search by Name
+                        </li>
+                        <li>
+                          Sort by Type
+                        </li>
+                      </ul> 
+                    </p>
+                    <p>
+                      While looking at this Pokédex, I realized what a primary use of a Pokédex is: <b>creating many different Teams</b>! I wanted to create a Pokédex that allows users to create their own teams and see some of their stats!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-6  mt-4">
+                <!-- make clicking image open site, on hover make it expand -->
+                <a href="https://pokemondb.net/pokedex/all#type=steel">
+                  <img class="site img-fluid" src="db_un.png" alt="Pokemon DB">
+                </a>
+              </div>
+
+              <div class="col-md-6 col-6  mt-4">
+                <!-- make clicking image open site, on hover make it expand -->
+                <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number">
+                  <img class="site img-fluid" src="bublapedia_un.png" alt="Bulbagarden">
+                </a>
+              </div>
+
+              <div class="col-md-6 mt-3  mt-4">
+                <div class="card dark-bg h-100">
+                  <div class="card-body">
+                    <button button type="button" class="btn btn-primary card-title" data-bs-toggle="button"
+                      autocomplete="off"><i class="fa-solid fa-filter"></i></button>
+                    <h4><b>Bulbagarden</b></h4>
+                    <p class="card-text">
+                      Bulbagarden is a Wikipedia-like site that contains a lot of information about Pokemon. As a Wiki, it's Pokédex incorporates a lot of the information on its site: 
+                    </p>
+                    <p class="card-text">
+                      <ul>
+                        <li>
+                          Link to Pokemon's Wiki Page
+                        </li>
+                        <li>
+                          Clear Grouping of Evolution Stages
+                        </li>
+                        <li>
+                          Up-to-Date Pokemon Sprites
+                        </li>
+                      </ul> 
+                    </p>
+                    <p>
+                      A feature I thought would be incredibly interesting to add after looking at this site is sorting by <b>Evolution Stage</b>! This is something almost 
+                      no other Pokédex has, and I think it would be a great addition to my Pokédex! I believed in this idea so much that I named my concept <b>"Pokédex Evolution"</b>!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3 id="outline" class="pb-4 mb-4 border-bottom">
+                Concept Outline
+              </h3>
+              <p>
+                To create a fresh and new Pokédex, I decided to create a <b>mobile-friendly</b> and <b>interactive</b> Pokédex that allows users to <b>sort by Type, Evolution, Attack, and HP</b>, provides <b>more glanceable information</b> and enables <b>adding Pokemon to a team</b>!
+              </p>
+              <p>Below are are annotations of my new concept and how they incoporate these new features! <b>Click to enlarge the annotation!</b></p>
+            </div>
+
+
+          <!-- Modal Image Gallary Citation: https://trvswgnr.github.io/bs5-lightbox/ -->
+          <div class="row">
+            <a href="Overview.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+              <img src="Overview.png" class="img-fluid site">
+            </a>
+            <a href="filter_sort.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+              <img src="filter_sort.png" class="img-fluid site">
+            </a>
+            <a href="team.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+              <img src="team.png" class="img-fluid site">
+            </a>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3 id="concept" class="pb-4 mb-4 border-bottom">
+                Interactive Concept
+              </h3>
+              <p>After making a LoFi prototype, we moved onto making our HiFi prototype in Figma. This prototype went through a few iterations
+                (especially after incorporating the feedback from studio).
+              </p>
+
+              <p>Now, you can go play around with the concept yourself! Have fun <b>filtering and sorting</b> Pokémon and evaluating the stats of different <b>team configurations!</b></p>
+             
+              <p>I hope you enjoy playing around with it! <b>Click the image below to open the site!</b></p>
+
+              <!-- CITATION: Figures https://getbootstrap.com/docs/5.0/content/figures/ -->
+              <div class="col-md-12">
+                <figure class="figure">
+                  <a href="https://jubilatedpanda007.github.io/development/">
+                    <img src="base_un.png" class="figure-img img-fluid rounded site" alt="Pokémon Evolution - Pokédex Concept">
+                  </a>
+                  <figcaption class="figure-caption">Pokémon Evolution - Pokédex Concept</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 mt-5">
+              <h3 id="conclusion" class="pb-4 mb-4 border-bottom">
+                Conclusion
+              </h3>
+              <p>In the end, I would love to add more Pokemon to this prototype and see this become a real product! I think it would be excellent to make this concept open source: both adding more Pokémon and scaling the features to handle all of the Pokémon!</p>
+              <p>
+                For the Pokémon lovers out there, I hope this inspired you to create new tools for the Pokémon community! I would love to see what you come up with!
+              </p>
+              <p>
+                Now, <b>go catch 'em all!</b>
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="floating" href="https://jubilatedpanda007.github.io/portfolio/">
+    <!-- add back arrow from font awesome -->
+    <i class="fa-solid fa-arrow-left"></i>
+    Back to Portfolio
+  </a>
+
+
+
+  <footer class="footer footer-bg custom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
+            <p class="mb-1">Pokémon Evolution - A Pokédex Concept</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+
+      <!-- Lightbox CDN for Modal Image Gallery -->
+      <!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+      <!-- import index.js in this directory -->
+      <script src="index.js"></script>
+</body>
+
+</html>

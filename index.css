@@ -1,0 +1,485 @@
+body {
+    font-family: "Sofia-Pro", sans-serif;
+    background-color: #171923;
+  }
+
+/*  set titles to white, secondary text to a0aebf */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+p, li {
+  color: #eff1f5;
+}
+
+.section {
+    padding: 2rem 0 7rem;
+}
+
+.subheader {
+    font-weight: 600;
+    color: #4154f1;
+}
+
+.custom-navbar {
+    background: #000;
+}
+
+.custom-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.jumbo-bg {
+    background-color: #f00000;
+}
+
+.btn-primary {
+  background-color: #f00000 !important;
+  border-color: #fff !important;
+}
+
+button {
+    background-color: rgb(127, 0, 0);
+    color: #fff;
+    /* make a glow effect */
+    box-shadow: 0 0 5px rgb(127, 0, 0);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* #floating {
+  line-height: 0;
+  padding: 15px 35px;
+  border-radius: 4px;
+  text-decoration: none;
+  
+  color: #fff;
+  background-color: #000;
+
+  box-shadow: 0 0 5px #fff;
+} */
+
+/* #floating:hover {
+
+  transform: scale(1.05);
+  transition: 0.5s;
+  color: #000;
+  background-color: #fff;
+
+  box-shadow: 0 0 5px #000;
+} */
+
+
+#floating {
+  line-height: 0;
+  padding: 15px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  /* float bottom left */
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+#floating i {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#floating:hover {
+  color: white;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+#floating:hover i {
+  color: white;
+  transform: translateX(-5px);
+}
+
+
+
+
+.dark-bg {
+    background-color: #000;
+}
+
+/* on hover make expand */
+.site:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* make Y Combinator orange, bold, and underline */
+.topic {
+    color: #f00000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.onwards {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+    background: #000;
+    box-shadow: 0px 5px 30px #000;
+}
+
+.onwards i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.onwards:hover {
+    color: white;
+}
+
+.onwards:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+
+.start {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #f00000;
+    background: #fff;
+    box-shadow: 0px 5px 30px #f00000;
+}
+
+.start i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.start:hover {
+    color: #770000;
+}
+
+.start:hover i {
+    color: #770000;
+    transform: translateX(5px);
+}
+
+/* CITATION: https://codepen.io/Itchiii/pen/Ldaoaz */
+.path {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation: pathAnimation 1.2s linear 0.001s forwards;
+    visibility: hidden;
+} 
+
+.path2 { 
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: pathAnimation2 1.5s linear 1.2s forwards; 
+    visibility: hidden;
+}
+
+.eye {
+    stroke-dasharray: 68;
+    stroke-dashoffset: 68;
+    animation: eyeAnimation .5s linear 2.72s forwards;
+    visibility: hidden;
+}
+
+@keyframes pathAnimation { 
+    from {visibility: hidden; stroke-dashoffset: 572;}
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes pathAnimation2 {  
+    from {visibility: hidden;stroke-dashoffset: 800; }
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes eyeAnimation {  
+    from { visibility: hidden;stroke-dashoffset: 68;}
+    to {visibility: visible; stroke-dashoffset: 0;}
+}
+
+
+
+/* CITATION: https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, #f00000 0%, #f0f0f0 100%);
+    color:white;
+  }
+  .logo {
+    width:50px;
+    fill:white;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  
+  .inner-header {
+    height:85vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+
+
+  /* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
+  
+/* CITATION: Gradient Scrollbar https://h.dhairyashah.dev/how-to-make-a-beautiful-gradient-scroll-bar-with-css*/
+  /* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #5A5A5A;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ee1515, #f00000, rgb(127, 0, 0));
+  }
+
+  /* disable background on horiztonal scroll */
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+
+
+  @keyframes animateSprite {
+    0% {
+      background-position: -600px; /* Starting position moving left sprite */
+    }
+    20% {
+      background-position: 0px; /* Straight on sprite */
+    }
+    25% {
+      background-position: -200px; /* Moving up sprite */
+    }
+    35% {
+      background-position: -400px; /* Moving right sprite */
+    }
+    40% {
+      background-position: -400px;
+    }
+    50% {
+      background-position: -200px;  /* Moving up sprite */
+    }
+    60% {
+      background-position: -0px; /* Straight on sprite */
+    }
+    67% {
+      background-position: -600px; /* Moving up sprite */
+    }
+  
+    100% {
+      background-position: -600px;
+    }
+  }
+  
+  @keyframes swim {
+    0% {
+      transform: translate(0, 0); /* Starting position */
+    }
+    20% {
+      transform: translate(calc(-50vw - 100px), 0); /* Animate to center of screen */
+    }
+    25% {
+      transform: translate(calc(-50vw - 100px), 0); /* Stay at the center for 1 second */
+    }
+    35% {
+      transform: translate(calc(-50vw - 100px), -20vh); /* Animate up for 2 seconds */
+    }
+    50% {
+      transform: translate(-25vw, 15vh); /* Animate bottom right for 3 seconds */
+    }
+    60% {
+      transform: translate(-25vw, -20vh); /* Animate up at right of the screen */
+    }
+    67% {
+      transform: translate(-25vw, -20vh);
+    }
+  
+    100% {
+      transform: translate(calc(-100vw - 300px), 0); /* Animate past left past the screen */
+    }
+  }
+  .ocean {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(0deg, #182848, #2980b9)
+  }
+  
+  .bubble {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: -30px;
+    opacity: 0.2;
+    animation: bubble 15s ease-in-out infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: translateY(0%);
+      opacity: 0.06;
+    }
+    100% {
+      transform: translateY(-120vh);
+    }
+  }
+  
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 200px;
+    }
+  }
+
+
+
+
+/* Citation: Pokeball */
+  /* Poké Styles */
+  .pokeball {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 15px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset -10px 10px 0 10px #ccc;
+    animation: fall .25s ease-in-out,
+               shake 1.25s cubic-bezier(.36,.07,.19,.97) 3;
+  }
+  .pokeball::before,
+  .pokeball::after {
+    content:"";
+    position: absolute;
+  }
+  .pokeball::before {
+    background: red;
+    width: 100%;
+    height: 50%;
+  }
+  .pokeball::after {
+    top: calc(50% - 10px);
+    width: 100%;
+    height: 20px;
+    background: #000;
+  }
+  .pokeball__button {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background: #7f8c8d;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 0 10px black;
+    animation: blink .5s alternate 7;
+  }
+  /* Animation */
+  @keyframes blink {
+    from { background: #eee;}
+    to { background: #e74c3c; }
+  }
+  @keyframes shake {
+    0 { transform: translate(0, 0) rotate(0); }
+    20% { transform: translate(-10px, 0) rotate(-20deg); }
+    30% { transform: translate(10px, 0) rotate(20deg); }
+    50% { transform: translate(-10px, 0) rotate(-10deg); }
+    60% { transform: translate(10px, 0) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0); }
+  }
+  @keyframes fall {
+    0% { top: -200px }
+    60% { top: 0 }
+    80% { top: -20px }
+    100% { top: 0 }
+  }
+  
+  a {
+    color: #f00000;
+  }
